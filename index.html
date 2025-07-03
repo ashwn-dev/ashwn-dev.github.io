@@ -5,45 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ashwin Dev</title>
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="styles.css" />
+  <!-- Clean Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+
+  <!-- Styles & AOS -->
+  <link rel="stylesheet" href="style.css" />
   <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
 
-  <!-- Icons -->
+  <!-- FontAwesome -->
   <script src="https://kit.fontawesome.com/YOUR_KIT_ID.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header data-aos="fade-down">
-    <h1><i class="fas fa-user"></i> Ashwin Dev</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <div id="root"></div>
 
-  <main>
-    <section id="about" data-aos="fade-up">
-      <h2>About Me</h2>
-      <p>Brief bio goes here.</p>
-    </section>
-
-    <section id="projects" data-aos="fade-up">
-      <h2>Projects</h2>
-      <ul id="project-list"></ul>
-    </section>
-
-    <section id="contact" data-aos="fade-up">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:you@example.com">adev2883@gmail.com</a></p>
-    </section>
-  </main>
-
-  <!-- Scripts -->
+  <!-- AOS init -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 800 });
-  </script>
-  <script src="app.js"></script>
+  <script> AOS.init({ duration: 700, once: true }); </script>
+
+  <!-- React, ReactDOM, Babel, Plotly -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://cdn.plot.ly/plotly-2.24.1.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- Your app -->
+  <script type="text/babel" src="app.js"></script>
 </body>
 </html>
