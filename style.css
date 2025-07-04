@@ -78,6 +78,7 @@ h1 {
   font-weight: 800;
   margin-bottom: 8px;
 }
+
 /* ──────────────────────────────────────
    Header navigation in top-right
 ────────────────────────────────────── */
@@ -145,3 +146,55 @@ ul#project-list a:hover {
 #about { scroll-margin-top: 120px; }
 #projects { scroll-margin-top: 120px; }
 #contact { scroll-margin-top: 120px; }
+
+/* ──────────────────────────────────────
+   Responsive: header on small screens
+────────────────────────────────────── */
+@media (max-width: 600px) {
+  /* Header container: stack everything vertically, centered */
+  header {
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+  /* Name box: back to normal flow, centered */
+  header h1 {
+    position: static;        /* cancel the absolute positioning */
+    display: inline-block;   /* keep the outline */
+    margin: 0 auto 16px;     /* center + space below */
+  }
+
+  /* Nav: static below the name, centered links */
+  header nav {
+    position: static;        /* cancel the absolute positioning */
+    margin: 0;               /* reset any offsets */
+  }
+  header nav a {
+    display: inline-block;   /* allow wrapping */
+    margin: 0 8px;           /* tighter spacing on mobile */
+  }
+}
+
+/* ─────────────────────────────────────────────
+   Contact icons (make sure this is near the bottom)
+───────────────────────────────────────────── */
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 16px;
+}
+
+.contact-icons a {
+  color: #000;
+  transition: color 0.2s;
+}
+
+.contact-icons a:hover {
+  color: #17a2b8;
+}
+
+.contact-icons svg {
+  display: block;
+}
+
