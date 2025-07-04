@@ -17,7 +17,10 @@ function App() {
         <section id="about" data-aos="fade-up">
           <h2>About Me</h2>
           <p>
-            I'm a recent graduate from Reed College with a B.A. in Mathematics with concentration in Statistics. I’m currently exploring opportunities in investment analysis, data science, and strategy.
+            Welcome to my personal website! My name is Ashwin and I recently graudated with a B.A. in Mathematics with Concentration in Statistics from Reed College in Portland, Oregon. During my final year at Reed, I completed a senior thesis titled "Dynamic Volatility in Financial Markets: An Evaluation of the Generalized Autoregressive Conditional Hetereskedastic (GARCH) Model". I am currently looking for full-time opportunities in investment analysis, data science, and strategy.
+          </p>
+          <p>
+            I enjoy working on projects that deal with time series analysis, data visualization, and statistical modeling. I have the most experience with R, however I am also proficient in Python and SQL. Additionally, I have worked on various projects where I've used Microsoft Excel and Bloomberg Terminal for investment research and analysis.
           </p>
         </section>
 

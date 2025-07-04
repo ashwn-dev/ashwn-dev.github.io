@@ -12,11 +12,22 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: 'Inter', sans-serif;
-  color: #212529;
-  background-color: #f8f9fa;
+  font-family: Georgia, serif;
+  color: #000000;                /* make all text black */
+  background-color: #fffbf7ff;   /* your new pale background */
   line-height: 1.6;
 }
+
+/* ─────────────────────────────────────────────
+   Override colors & font-weight
+───────────────────────────────────────────── */
+body,
+h1, h2, h3, h4, h5, h6,
+p, a, nav a {
+  color: #000 !important;       /* everything in black */
+  font-weight: normal !important; /* remove bold */
+}
+
 
 /* --------------------------------------------
    LAYOUT
@@ -27,12 +38,23 @@ body {
   padding: 40px 20px;
 }
 header {
-  background: #343a40;
-  color: #fff;
-  text-align: center;
-  padding: 60px 20px;
-  border-radius: 8px;
+  position: relative;
+  padding: 20px;        /* overall padding for breathing room */
   margin-bottom: 80px;
+  text-align: left;     /* align contents to the left */
+}
+
+header h1 {
+  display: inline-block;
+  margin: 0;
+  padding: 8px 16px;
+  border: 2px solid #000;
+  border-radius: 4px;
+  /* move it toward top-left */
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: transparent;
 }
 main > section {
   padding: 60px 0;
@@ -55,6 +77,18 @@ h1 {
   font-size: 3rem;
   font-weight: 800;
   margin-bottom: 8px;
+}
+/* ──────────────────────────────────────
+   Header navigation in top-right
+────────────────────────────────────── */
+header nav {
+  position: absolute;
+  top: 20px;    /* aligns with your h1 top */
+  right: 20px;  /* same padding from the right */
+}
+
+header nav a {
+  margin-left: 16px;  /* space between links */
 }
 h2 {
   font-size: 2rem;
