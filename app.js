@@ -10,6 +10,8 @@ function App() {
         <nav>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
+          <a href="#blog">Blog</a>
+          <a href="#projects">Projects</a>
         </nav>
       </header>
 
@@ -17,7 +19,7 @@ function App() {
         <section id="about" data-aos="fade-up">
           <h2>About Me</h2>
           <p>
-  Welcome to my personal website! My name is Ashwin, and I recently graduated with a B.A. in Mathematics with a Concentration in Statistics from Reed College in Portland, Oregon. During my final year at Reed, I completed a senior thesis titled "Dynamic Volatility in Financial Markets: An Evaluation of the Generalized Autoregressive Conditional Heteroskedastic (GARCH) Model." I am currently looking for full-time opportunities in investment analysis, data science, and strategy.
+  Welcome to my personal website! My name is Ashwin, and I recently graduated with a B.A. in Mathematics with a Concentration in Statistics from Reed College in Portland, Oregon. During my final year at Reed, I completed a senior thesis titled "Dynamic Volatility in Financial Markets: An Evaluation of the Generalized Autoregressive Conditional Heteroskedastic (GARCH) Model." I currently work as a Performance Analyst at Callan in the Portland office.
           </p>
           <p>
   I enjoy working on projects that deal with time series analysis, data visualization, and statistical modeling. I have the most experience with R; however, I am also proficient in Python and SQL. Additionally, I have worked on various projects where I’ve used Microsoft Excel and the Bloomberg Terminal for investment research and analysis.
@@ -28,6 +30,16 @@ function App() {
           <p>
   Here is a <a href="resume.pdf" download>link to my resume</a> if you’d like to read more about my work experience.
           </p>
+        </section>
+      
+        <section id="blog" data-aos="fade-up">
+          <h2>Blog</h2>
+          <p>Coming soon!</p>
+        </section>
+
+        <section id="projects" data-aos="fade-up">
+          <h2>Projects</h2>
+          <p>Coming soon!</p>
         </section>
 
         <section id="contact" data-aos="fade-up">
